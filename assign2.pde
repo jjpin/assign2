@@ -149,6 +149,8 @@ void draw() {
             hpX = 40;
             enemyX = -30;
             enemyY = floor(random(60,400));
+            fighterX = width/2;
+            fighterY = height/2;
             gameState = GAME_RUN;
           }
         }
