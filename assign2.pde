@@ -55,8 +55,8 @@ void draw() {
       image(start1, 320, 240);
       if(mouseX > 200 && mouseX < 440){
         if(mouseY > 360 && mouseY < 420){
+          image(start2, 320, 240);
           if(mousePressed){
-            image(start2, 320, 240);
             gameState = GAME_RUN;
           }
         }
@@ -144,8 +144,8 @@ void draw() {
       image(end1, 320, 240);
       if(mouseX > 200 && mouseX < 440){
         if(mouseY > 300 && mouseY < 360){
+          image(end2, 320, 240);
           if(mousePressed){
-            image(end2, 320, 240);
             hpX = 40;
             enemyX = -30;
             enemyY = floor(random(60,400));
