@@ -123,6 +123,9 @@ void draw() {
       if((int)fighterX+25 >= treasureX-20 && (int)fighterX-25 <= treasureX+20){
         if((int)fighterY+25 >= treasureY-20 && (int)fighterY-25 <= treasureY+20){
           hpX += 20;
+          if(hpX > 200){
+            hpX = 200;
+          }
           treasureX = floor(random(40,580));
           treasureY = floor(random(40,380));
         }
@@ -132,9 +135,6 @@ void draw() {
       fill(#FF0000);
       rect(9, 3, hpX, 20);
       image(hp, 105, 15);
-      if(hpX > 200){
-        hpX = 200;
-      }
       if(hpX <= 0){
         gameState = GAME_OVER;
       }
