@@ -52,10 +52,10 @@ void draw() {
   switch(gameState){
     case GAME_START:
       imageMode(CENTER);
-      image(start1, 320, 240);
+      image(start2, 320, 240);
       if(mouseX > 200 && mouseX < 440){
         if(mouseY > 360 && mouseY < 420){
-          image(start2, 320, 240);
+          image(start1, 320, 240);
           if(mousePressed){
             gameState = GAME_RUN;
           }
@@ -141,10 +141,10 @@ void draw() {
     break;
     
     case GAME_OVER:
-      image(end1, 320, 240);
+      image(end2, 320, 240);
       if(mouseX > 200 && mouseX < 440){
         if(mouseY > 300 && mouseY < 360){
-          image(end2, 320, 240);
+          image(end1, 320, 240);
           if(mousePressed){
             hpX = 40;
             enemyX = -30;
